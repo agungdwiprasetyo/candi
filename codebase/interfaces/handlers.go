@@ -9,6 +9,7 @@ import (
 // RESTHandler delivery factory for REST handler
 type RESTHandler interface {
 	Mount(group *echo.Group)
+	// Mount(group fiber.Router)
 }
 
 // GRPCHandler delivery factory for GRPC handler
